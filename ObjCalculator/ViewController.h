@@ -20,14 +20,17 @@ typedef enum {
 
 @interface ViewController : UIViewController {
 
-double curValue;
-double totalCurValue;
+//double curValue;
+//double totalCurValue;
 NSString *curInputValue;
-kStatusCode curStatusCode;
+//kStatusCode curStatusCode;
 }
 
 -(IBAction)digitPressed:(UIButton*)sender;
 -(IBAction)operationPressed:(UIButton*)sender;
+@property Float64   curValue;
+@property Float64   totalCurValue;
+@property kStatusCode curStatusCode;
 
 @property (weak,nonatomic)IBOutlet UILabel *displayLabel;
 @end
